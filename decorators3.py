@@ -16,7 +16,7 @@ def execute_twice_decorator(function: callable, *args):
 @execute_twice_decorator
 def print_hello(name=None) -> None:
     """
-    This function prints "Hello!" to the terminal.
+    This function prints "Hello!" if there's no name passed, or "Hello name!" when name is a string that is passed to the function, to the terminal.
     """
     print("Hello " + name + "!") if name else print("Hello!")
 
